@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cadastro">
+    <section id="contato-cadastro">
+        <div class="interface-cadastro">
+            <h2 class="titulo-cadastro">Cadastre sua <span>Criança</span></h2>
+            <p class="cadastro">Olá, papai, mamãe ou respectivos responsáveis, preencha o formulário abaixo para cadastrar a sua criança e verificar seu desenvolvimento.</p>
+            
+            <form id="cadastroForm" class="formulario-contato">
+                <div class="campo-form-cadastro">
+                    <label for="nomeResponsavel">Nome do Responsável</label>
+                    <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Nome Completo" required>
+                </div>
+
+                <div class="campo-form-cadastro">
+                    <label for="nomeCrianca">Nome da Criança</label>
+                    <input type="text" id="nomeCrianca" name="nomeCrianca" placeholder="Nome da Criança" required>
+                </div>
+    
+                <div class="campo-form-cadastro">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="campo-form-cadastro">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+
+                <div class="campo-form-cadastro">
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme a Senha" required>
+                </div>
+    
+                <button type="button" onclick="validarFormulario()" class="bnt-enviar-cadastro">Concluir Cadastro</button>
+            </form>
+            <p id="mensagem" class="mensagem"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

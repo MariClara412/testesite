@@ -1,0 +1,2106 @@
+/* Ajustes gerais*/
+#home-page {
+    font-family:'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('Fotos/Fundo\ simples.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat; 
+    height: 400px;
+    width: 100%; 
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    padding: 6px 4%;
+    background-color: #0a0a23; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content {
+    margin-top: 100px; 
+}
+
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 4%; 
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.menu-desktop ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #9d92ff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul 
+{
+     list-style-type: none;
+      display: flex; 
+      justify-content: center ; 
+       flex-grow: 1;  
+    }
+
+    header nav ul li
+     {
+        display: inline-block; 
+        padding: 0 20px; 
+     }
+
+
+
+/* PLANETAS MATÉRIAS */
+
+.content {
+    margin-top: 160px; 
+}
+.planetas { 
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 80px;
+    padding: 20px; 
+} .planetas .planeta { 
+    position: relative; 
+    display: inline-block; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+ .planeta img {
+     height: 200px;
+      
+    } 
+   
+    .planeta.geografia img {
+         height: 280px; 
+         width: 200px;
+    }
+    .planeta.portugues img {
+        height: 220px; 
+        width: 190px;
+   }
+   .planeta.ciencias img {
+    height: 395px; 
+    width: 210px;
+
+}
+
+.planetas .planeta:hover { 
+    transform: scale(1.2); 
+}
+ .planeta.portugues {
+     top: 0px; 
+     left: 0px; 
+    } .planeta.matematica { 
+        top: 200px; 
+        left: -10px; 
+    } .planeta.ciencias { 
+        top: -20px; 
+        left: 0; 
+    } 
+    .planeta.geografia { 
+      top: 100px; 
+      left: 20px;
+    } 
+    .planeta.historia { 
+        top: 10px; 
+        left: 10px;
+     }
+     .foguete-fixo { 
+        position: absolute; 
+        bottom: 20px; 
+        right: 60px; 
+        width: 70px; 
+        transform: rotate(270deg);  
+        animation: flutuar 3s ease-in-out infinite; 
+    }
+     @keyframes flutuar { 
+        0% { transform: translateY(0) rotate(180deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+         100% { transform: translateY(0) rotate(180deg); } 
+        }
+
+      
+
+        /* SESSÃO ÚLTIMAS MISSOES */
+
+.ultimas-missoes {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ultimas-missoes .titulo-PI {
+    color: #fff;
+    padding: auto;
+}
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.missao {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    border-radius: 20px;
+     border-radius: 20px;
+     gap: 20px; 
+     border: 2px solid #000;
+     background-color: #b4b4e6;
+     transition: .2s;
+}
+
+.missao:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ffffff75;
+}
+
+
+.conteiner {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+}
+
+.conteiner img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.conteiner2 {
+    width: 60%;
+    text-align: left;
+}
+
+.conteiner2 h3 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.conteiner2 p {
+    font-size: 0.95em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.estrelas {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.estrela {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.estrela.cheia {
+    color:#ff9800;
+}
+
+.missao-2 .estrela.cheia {
+    color: #ff9800;
+}
+
+.missao-3 .estrela.cheia {
+    color:#ff9800;
+}
+
+
+.btn-continuar-home {
+    background-color: #303f5a;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 40%;
+    margin-top: 10px;
+   
+    
+    
+}
+
+.btn-continuar-home:hover {
+    background-color: #6da7eb;
+    box-shadow: 0 0 10px #57439e;
+}
+
+
+.missao-1 { background-color: #D88585; }
+.missao-2 { background-color: #eec67b; }
+.missao-3 { background-color: #81c784; }
+
+
+    /*MASCOTE*/
+        .mascote {
+            position:relative ; 
+            bottom: 100px; 
+            top: -1370px; 
+            left: 700px;
+            width: 250px; 
+            cursor: pointer; 
+        }
+        
+        .mascote img {
+            width: 100%; 
+            height: auto; 
+            top: 100px;
+        }
+
+        .mascote {
+            position: relative;
+            text-align: center;
+          }
+          
+          /* Estilo para a imagem do mascote */
+          .mascote-img {
+            width: 150px;
+            height: auto;
+            animation: voar 6s ease-in-out forwards, flutuar 2s infinite ease-in-out; /* Animação de voo e flutuação */
+          }
+          
+          /* Animação de voo (movendo o mascote do canto inferior esquerdo até o centro) */
+          @keyframes voar {
+            0% {
+              transform: translate(-100vw, 100vh); /* Começa no canto inferior esquerdo */
+            }
+            50% {
+              transform: translate(0, -100px); /* Subindo um pouco e indo para o centro */
+            }
+            100% {
+              transform: translate(0, 0); /* Chega no centro da tela */
+            }
+          }
+          
+          /* Mostrar o balão de fala enquanto o mascote voa e depois */
+          .mascote:hover .fala {
+            display: block;
+          }
+          
+          /* Animação de flutuação contínua */
+          @keyframes flutuar {
+            0% {
+              transform: translateY(0); /* Posicionamento inicial */
+            }
+            50% {
+              transform: translateY(-10px); /* Sobe um pouco */
+            }
+            100% {
+              transform: translateY(0); /* Desce um pouco e continua */
+            }
+          }
+        
+        
+          /*RODAPÉ*/
+          
+          
+        footer {
+            background-color: #0a0a23;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; 
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; 
+        }
+        
+        .footer-menu {
+            display: flex;
+            gap: 20px; 
+        }
+        
+        .footer-menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-menu a:hover {
+            color: #bdc8fa;
+        }
+       
+       
+        /* Responsividade */
+
+
+@media screen and (max-width: 768px) {
+    header .interface {
+        flex-direction: column; /* Alinha logo e menu verticalmente */
+        align-items: center;
+    }
+
+    .menu-desktop ul {
+        flex-direction: column; /* Alinha os itens do menu verticalmente */
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-desktop li {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+    }
+
+    .planetas {
+        flex-direction: column; /* Alinha os planetas verticalmente em telas menores */
+        align-items: center; /* Centraliza os planetas */
+    }
+
+    .planeta img {
+        width: 80%; /* Ajusta a largura das imagens dos planetas */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .ultimas-missoes {
+        padding: 10px 2%; /* Ajusta o padding */
+    }
+
+    .missao {
+        flex-direction: column; /* Alinha imagem e texto verticalmente */
+        width: 90%; /* Ajusta a largura das missões */
+    }
+
+    .missao img {
+        width: 100%; /* Imagem ocupa toda a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .mascote {
+        width: 70%; /* Ajusta a largura do mascote em telas menores */
+        left: 10%; /* Centraliza horizontalmente */
+    }
+
+    footer {
+        padding: 10px; /* Ajusta o padding do rodapé */
+    }
+
+    .footer-menu {
+        flex-direction: column; /* Alinha os itens do rodapé verticalmente */
+    }
+
+    .footer-menu a {
+        margin: 5px 0; /* Espaçamento entre os links do rodapé */
+    }
+}
+
+
+
+
+/* Estilo das seções */
+
+.introducao, .objetivo, .publico-alvo, .seguranca, .valores {
+    margin-bottom: 30px;
+}
+
+/* Estilo para o botão de chamada para ação */
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* PÁGINA CIÊNCIAS */
+
+
+* {
+  
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#page-ciencias {
+    background-color: #c1f5a6;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-ciencias .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-ciencias #menu-ciencias {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-ciencias .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-ciencias #C {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-ciencias .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-ciencias .mission-card {
+    display: flex;
+    background-color: #81c784;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-ciencias .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-ciencias .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-ciencias .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-ciencias .mission-btn {
+    background-color: #4b7f4a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+
+  
+  .science-text {
+    max-width: 60%;
+  }
+  
+  .science-text h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .science-text p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .science-button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .science-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .science-image img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+/* Partes do corpo humano */
+
+
+#body-cuidados-corpo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #A6D093;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  #content-cuidados-corpo {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: white;
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  #intro-cuidados-corpo h1,
+  #partes-corpo h2,
+  #funcoes-corpo h2,
+  #importancia-higiene h2,
+  #quiz-cuidados-corpo h2 {
+    color: #4b7f4a;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  #intro-cuidados-corpo p,
+  #funcoes-corpo p,
+  #importancia-higiene p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  /* Partes do Corpo */
+  #partes-corpo .parte-corpo {
+    display: inline-block;
+    width: 20%;
+    margin-right: 5% ;
+    vertical-align: top;
+    padding: 10px;
+    left: center
+  }
+  
+  #partes-corpo h3 {
+    font-size: 1.3em;
+    color: #4b7f4a;
+    margin-top: 20px;
+  }
+  
+  #partes-corpo ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #partes-corpo li {
+    font-size: 1em;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  #partes-corpo li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+  }
+  
+  /* Imagens das Partes do Corpo */
+  .parte-imagem {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Quiz Section */
+  #quiz-cuidados-corpo {
+    background-color: #e6f7ff;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .alternativa {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #2d7edb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #1d5bb8;
+  }
+  
+  /* Imagens nas Alternativas do Quiz */
+  .imagem-alternativa {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  #resultado, #resultado2 {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d1e7dd;
+    border: 1px solid #b3d3b8;
+  }
+  
+  #resultado p, #resultado2 p {
+    font-size: 1.1em;
+    color: #28a745;
+  }
+  
+
+
+/* Estilos específicos da página de Matemática */
+#page-matematica {
+    background-color: #b5d9f5;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-matematica .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-matematica #menu-matematica {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-matematica .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-matematica #M {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-matematica .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-matematica .mission-card {
+    display: flex;
+    background-color: #a9cce3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-matematica .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-matematica .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-matematica .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-matematica .mission-btn {
+    background-color: #2e86c1;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Numeros naturais */
+* {
+   
+    box-sizing: border-box;
+}
+
+/* Estilo global para o body */
+body.numero {
+    font-family: 'Arial', sans-serif; 
+    background-color: #e6f4ff; 
+    color: #004085; 
+    padding: 20px; 
+}
+
+
+.contentacao {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #004085; 
+    margin-bottom: 30px; 
+}
+
+
+.seleçao {
+    margin-bottom: 30px; 
+}
+
+
+.seleçao-title {
+    font-size: 1.8rem; 
+    color: #007bff; 
+    margin-bottom: 10px; 
+}
+
+
+.section-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list li {
+    margin-bottom: 8px; 
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .examples, .examples-list {
+        font-size: 1rem; /* Texto um pouco menor em telas pequenas */
+    }
+}
+
+
+/* Formas Geométricas */
+* {
+   
+    box-sizing: border-box;
+}
+
+
+body.formas {
+    font-family: 'Montserrat Alternates', sans-serif; 
+     background-color: #e6f4ff;
+    height: 100%; 
+    width: 100%; 
+    color: #004085; 
+    padding: 20px; 
+}
+
+
+.content-formas {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo-formas {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #004085; 
+    margin-bottom: 30px; 
+}
+
+
+.selection-formas {
+    margin-bottom: 30px; 
+}
+
+.formas img {
+    max-width: 50%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+    
+
+.section-formas-title {
+    font-size: 1.8rem; 
+    color: #007bff; 
+    margin-bottom: 10px; 
+}
+
+
+.section-formas-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples-formas {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list-formas {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list-formas li {
+    margin-bottom: 8px; 
+}
+/*Fim Formas Geométricas*/
+
+
+
+
+
+
+/* Estilos específicos da página de História */
+
+
+
+#page-historia {
+    background-color: #e0d7f0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-historia .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-historia #menu-historia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-historia .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#page-historia #H {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#page-historia .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-historia .mission-cardh {
+    display: flex;
+    background-color: #d2aed7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-historia .mission-cardh img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-historia .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-historia .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-historia .mission-btn {
+    background-color: #69356b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+/* Origem dos humanos */
+* {
+    
+    box-sizing: border-box;
+}
+
+
+body.site-body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #c99cd1; 
+    color: #4a148c; 
+    padding: 20px; 
+}
+
+/* Container principal da página */
+.containerrrr {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: rgb(244, 200, 253); 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titlee {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #4a148c; 
+    margin-bottom: 30px; 
+}
+
+
+.selection-h {
+    margin-bottom: 30px; 
+}
+
+
+.selection-h-title {
+    font-size: 1.8rem; 
+    color: #6a1b9a; 
+    margin-bottom: 15px; 
+}
+
+
+.selection-h-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.subsectionn {
+    margin-bottom: 20px; 
+}
+
+.subsectionn-title {
+    font-size: 1.5rem; 
+    color: #8e24aa; 
+    margin-bottom: 10px; 
+}
+
+.subsectionn-text {
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .subsection-text {
+        font-size: 1rem; /* Ajuste de fonte para telas pequenas */
+    }
+}
+
+
+
+
+
+/* Estilos específicos da página de Geografia */
+
+#page-geografia {
+    background-color: #f7deb1;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-geografia .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-geografia #menu-geografia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-geografia .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-geografia #G {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-geografia .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-geografia .mission-card {
+    display: flex;
+    background-color: #eec67b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-geografia .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-geografia .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-geografia .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-geografia .mission-btn {
+    background-color: #bb6f0c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.stars {
+    font-size: 18px;
+}
+  
+.estrela {
+    color: #fff;
+}
+
+.estrela.cheia {
+    color: #ff9800;
+}
+
+  
+/* Meios de Transporte e Comunicação */
+* {
+    
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+  }
+  
+  #main-body {
+    background-color: #f7deb1;
+  }
+  
+  #content-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  #meios-transporte, #meios-comunicacao {
+    margin-bottom: 30px;
+    color:#333;
+  }
+  
+  .meio {
+    background-color: #fff7d6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meio h3 {
+    color: #ff8800;
+  }
+  
+  .meio ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .meio .imagem {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .meio .imagem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  #quiz-section {
+    background-color: #fff7d6;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form .alternativa {
+    margin-bottom: 15px;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  form label img {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  
+  button[type="button"] {
+    background-color: #281c49;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #1e407e;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3b43f;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #resultado p {
+    font-weight: bold;
+  }
+
+
+  /*Quem são os Mapas?*/
+
+/* Estilo global para o body */
+#mapinhas {
+    font-family: 'Montserrat Alternates', sans-serif; /* Fonte simples e fácil de ler */
+    background-color: #fdd394;
+    height: 100%;
+    width: 100%;
+    color: #854b00;
+    padding: 20px; /* Espaço nas bordas */
+}
+
+/* Container principal da página */
+.content-mapa {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulo-mapa {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f79452;
+    margin-bottom: 30px;
+}
+
+
+.mapas {
+    display: flex; /* Torna o container flexível */
+    gap: 80px; /* Define o espaço entre as imagens */
+    margin-bottom: 30px; /* Espaço abaixo do container */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
+    justify-content: center;
+}
+
+.mapas img {
+    width: 32%; /* Largura de 32% para cada imagem */
+    height: auto; 
+    border-radius: 10%; 
+    object-fit: cover; 
+   
+}
+
+
+.selection-mapa {
+    margin-bottom: 30px;
+}
+
+
+.section-mapa-title {
+    font-size: 1.8rem;
+    color: #e09952;
+    margin-bottom: 10px;
+}
+
+
+.section-mapa-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+.examples-mapa {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.examples-list-mapa {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.examples-list-mapa li {
+    margin-bottom: 8px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .mapas {
+        flex-direction: column; /* Faz as imagens ficarem em coluna em telas menores */
+        align-items: center; /* Alinha as imagens ao centro */
+    }
+
+    .mapas img {
+        width: 80%; /* Imagens ocupando 80% da largura do contêiner */
+        margin-bottom: 20px; /* Adiciona um espaço abaixo das imagens para separar */
+    }
+}
+
+
+
+
+
+  
+
+/* PÁGINA PORTUGUÊS */
+
+#page-portugues {
+    background-color: #D88585;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+    font-family:'Montserrat Alternates', sans-serif;
+
+}
+
+#page-portugues .container-p-port {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-portugues #menu-portugues {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-portugues .back-btn-port {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-portugues #P {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-portugues .missions-port h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-portugues .mission-card-port {
+    display: flex;
+    background-color: #e0b3b3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-portugues .mission-card-port img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-portugues .mission-info-port h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-portugues .mission-info-port p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-portugues .mission-btn-port {
+    background-color: #3a5f6f;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+
+/* Aventura com o Alfabeto */
+* {
+    
+    box-sizing: border-box;
+    
+}
+
+.back-btn-iniciop {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.body-alfabeto {
+    font-family: 'Arial', sans-serif;
+    background-color: #D88585; 
+    color: #333; 
+    line-height: 1.6;
+    
+
+}
+
+.content-port {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; 
+    background-color: rgb(243, 205, 205);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px; 
+}
+
+h1.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d15959;
+}
+
+.intro {
+    font-size: 1 rem;
+    margin-bottom: 30px;
+}
+
+.chapter, .interlude {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.image-placeholder {
+    background-color: #e0e0e0;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+    color: #888;
+    font-size: 1.2rem;
+    border-radius: 5px; 
+}
+
+
+.conclusion, .final {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+
+.conclusion h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+}
+
+
+.final h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+    margin-top: 30px;
+}
+
+/* Definindo o layout para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1.title {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, .intro {
+        font-size: 1rem;
+    }
+
+    .image-placeholder {
+        height: 150px;
+        line-height: 150px;
+    }
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.option {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    border-color: #999;
+}
+
+.option img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: none;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.incorrect {
+    color: red;
+}
+
+
+/* TEXTOS LITERÁRIOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.textos {
+    font-family: 'Montserrat Alternates' , sans-serif;
+    background-color: #D88585; 
+    color: #7e3233; 
+    padding: 20px; 
+}
+
+
+.content-textos {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: rgb(243, 205, 205); 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo-textos {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #d15959; 
+    margin-bottom: 30px; 
+}
+
+
+.seleçao-textos {
+    margin-bottom: 20px; 
+}
+
+
+.seleçao-title-textos {
+    font-size: 1.5rem; 
+    color: #d15959; 
+    margin-bottom: 10px; 
+}
+
+
+.section-text-textos {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples-textos {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list-textos {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list-textos li {
+    margin-bottom: 8px; 
+}
+
+
+.textos img {
+    max-width: 40%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+
+
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .examples, .examples-list {
+        font-size: 1rem; /* Texto um pouco menor em telas pequenas */
+    }
+}
+
+
+/* Estilo do Formulário */
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    border-color: #45439e;
+    outline: none;
+}
+
+/* Estilo do Botão de Envio */
+.btn-enviar {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #33238d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #fff;
+    color: #5e439e;
+    box-shadow: 0 0 10px #5e3e99;
+}
+
+
+
+/* Estilo para a seção 'Sobre' */
+
+.sobre-site {
+    background-image: url(Fotos/Fundo\ simples.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+}
+
+.sobre {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.conteúdo div {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.conteúdo div:nth-child(odd) {
+    background-color: #f0f8ff; 
+}
+
+.conteúdo div:nth-child(even) {
+    background-color: #e6e6fa; 
+}
+
+
+.conteúdo div h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.conteúdo div p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Cadastro */
+
+.cadastro {
+    font-family: 'Montserrat Alternates', sans-serif,;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Fotos/Fundo\ simples.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+}
+
+
+#contato-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.interface-cadastro {
+    background-color: transparent;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#contato-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface-cadastro {
+    background-color: transparent;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.titulo-cadastro {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.titulo span {
+    color: #fff;
+}
+
+p .cadastro {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.campo-form-cadastro {
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+    
+}
+
+
+.btn-enviar-cadastro {
+    background-color: #dad152; 
+    color: #ece3ff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease; 
+}
+
+
+.btn-enviar-cadastro:hover {
+    background-color: #357abd; 
+}
+
+
+.mensagem {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+  
+  
+
+
+
+                    
+        
+        

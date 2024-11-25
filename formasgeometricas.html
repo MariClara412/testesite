@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Formas Geométricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="formas">
+
+    <div><button class="back-btn-iniciop" onclick="window.location.href='matematica.html';">&#8592;</button></div>
+
+    <div class="content-formas">
+        <h1 class="titulo-formas">Formas Geométricas: Quem são as Figuras Planas?</h1>
+
+        <section class="selection-formas">
+            <h2 class="section-formas-title">1. Triângulo</h2>
+            <p class="section-formas-text">Um triângulo é uma figura geométrica plana formada por três lados, três ângulos e três vértices.</p>
+            <ul class="examples-list-formas">
+                <li>Lados: 3 lados.</li>
+                <li>Vértices: 3 vértices.</li>
+                <li>Tipos: Pode ser equilátero (todos os lados iguais), isósceles (dois lados iguais) ou escaleno (todos os lados diferentes).</li>
+                <p class="examples-formas">Exemplos:</p>
+            </ul>           
+        </section>
+ 
+        <div class="formas" id="geometricas">
+            <img src="images/formas.jpg" alt="Imagem de Triângulo" class="img-ajustada">
+        </div>
+        
+        <section class="selection-formas">
+            <h2 class="section-formas-title">2. Quadrado</h2>
+            <p class="section-formas-text">O quadrado é uma figura geométrica plana que faz parte da categoria dos quadriláteros, ou seja, possui quatro lados. Aqui estão suas principais características:</p>
+           
+            <ul class="examples-list-formas">
+                <li>Lados: 4 lados iguais.</li>
+                <li>Vértices: 4 vértices.</li>
+                <li>Características: Todos os ângulos são retos (90 graus).</li>
+                 <p class="examples-formas">Exemplos:</p>
+            </ul>
+        </section>
+                <div class="formas" id="geometricas">
+            <img src="images/formas.jpg" alt="Imagem de Triângulo" class="img-ajustada">
+        </div>
+
+        <section class="selection-formas">
+            <h2 class="section-formas-title">3. Retângulo</h2>
+            <p class="section-formas-text">Um retângulo é uma figura geométrica plana que possui quatro lados e quatro ângulos retos (90°). Ele é um tipo específico de paralelogramo, pois seus lados opostos são paralelos e possuem o mesmo comprimento.</p>
+            <p class="examples-formas">     Exemplos:</p>
+            <ul class="examples-list-formas">
+                <li>Lados: 4 lados (lados opostos iguais).</li>
+                <li>Vértices: 4 vértices</li>
+                <li>Características: Todos os ângulos são retos (90 graus).</li>
+            </ul>
+        </section>
+
+        <div class="quiz-container">
+            <h1>Vamos lembrar para Aprender?</h1>
+            <div class="question">
+                <p>Qual desses animais é um leão?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/cadeia alimentar.jpg" alt="Gato">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, true)">
+                        <img src="images/Bicicleta.jpg" alt="Leão">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/carros.jpg" alt="Cachorro">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/cabeça.jpg" alt="Coelho">
+                    </div>
+                </div>
+            </div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+</body>
+</html>

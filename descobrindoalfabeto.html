@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Aventura com o Alfabeto!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-alfabeto">
+
+    <div><button class="back-btn-iniciop" onclick="window.location.href='portugues.html';">&#8592;</button></div>
+    
+    <div class="content-port">
+        <h1 class="title">Aventura com o Alfabeto!</h1>
+        <p class="intro">Você já parou para pensar como as palavras aparecem nos livros, nas histórias ou até mesmo nas músicas? Tudo isso só é possível graças ao alfabeto! Ele é como um grande grupo de amigos inseparáveis, com 26 letrinhas que formam todas as palavras que usamos para falar, escrever e nos expressar. Cada letra tem seu jeitinho especial, e quando elas se juntam, criam palavras mágicas que nos ajudam a aprender e nos divertir!</p>
+        
+        <div class="chapter">
+            <h2> O que é o Alfabeto?</h2>
+            <p>O alfabeto é uma sequência de letras organizadas de forma que todo mundo aprende da mesma maneira, começando pelo A e terminando no Z. Ele é dividido em dois grupos:</p>
+        </div>
+
+        <div class="chapter">
+            <h2> Vogais</h2>
+            <p>     As vogais são letras que representam sons que saem pela boca sem nenhum obstáculo, como a língua, os dentes ou os lábios. As vogais são fundamentais para a formação das sílabas e palavras.</p>
+            <p>A, E, I, O, U. Essas são as letras que fazem a música das palavras. Elas são muito importantes e aparecem em quase todas as palavras que conhecemos!</p>
+            <div class="image-placeholder">[Espaço para imagem]</div>
+        </div>
+
+        <div class="chapter">
+            <h2> Consoantes</h2>
+            <p>As consoantes são letras do alfabeto que, ao serem pronunciadas, encontram algum obstáculo na boca, como a língua, os dentes ou os lábios. Diferentemente das vogais, as consoantes não podem formar sílabas sozinhas e geralmente precisam estar acompanhadas de uma vogal para formar sons completos.</p>
+            <p>As outras 21 letras (como B, C, D, F, G...). Elas são as parceiras das vogais e ajudam a formar as palavras.</p>
+            <div class="image-placeholder">[Espaço para imagem]</div>
+        </div>
+
+        <div class="interlude">
+            <h2> Por que o alfabeto é tão importante?</h2>
+            <p>O alfabeto está por toda parte e é essencial para muitas coisas que fazemos no dia a dia.</p>
+            <li>Para ler e escrever: Imagine se não conhecêssemos as letras! Não poderíamos ler livros incríveis, escrever bilhetes para nossos amigos ou até mesmo entender as placas de trânsito.</li>
+            <li>Para aprender: Saber o alfabeto é o primeiro passo para aprender a juntar os sons das letras e formar palavras como "casa", "amigo" ou "felicidade".</li>
+            <li>Para nos comunicar: As letras permitem que a gente escreva mensagens, cante músicas, faça perguntas e até explique nossos sentimentos.</li>
+            <div class="image-placeholder">[Espaço para imagem]</div>
+        </div>
+
+        <div class="chapter">
+            <h2> Curiosidade especial</h2>
+            <p>Você sabia que o alfabeto brasileiro é chamado de alfabeto latino? Ele é usado em muitos outros países, mas cada língua cria suas palavras com ele. Além disso, o alfabeto já foi diferente há muito tempo! Letras como K, W e Y não faziam parte do nosso alfabeto até alguns anos atrás.</p>
+            <div class="image-placeholder">[Espaço para imagem]</div>
+        </div>
+
+        <div class="quiz-container">
+            <h1>Vamos lembrar para Aprender?</h1>
+            <div class="question">
+                <p>Qual desses animais é um leão?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/cadeia alimentar.jpg" alt="Gato">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, true)">
+                        <img src="images/Bicicleta.jpg" alt="Leão">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/carros.jpg" alt="Cachorro">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="images/cabeça.jpg" alt="Coelho">
+                    </div>
+                </div>
+            </div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+        <script src="script.js"></script>
+
+        
+</body>
+</html>
